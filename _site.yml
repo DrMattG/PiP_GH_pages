@@ -1,0 +1,12 @@
+name: "ParksInThePandemic_github.io"
+title: "Parks in the Pandemic"
+description: |
+  Parks in the Pandemic
+output_dir: "docs"
+navbar:
+  right:
+    - text: "Home"
+      href: index.html
+    - text: "About"
+      href: about.html
+output: distill::distill_article
