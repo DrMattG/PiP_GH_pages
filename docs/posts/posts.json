@@ -1,17 +1,6 @@
 [
   {
-    "path": "posts/Details/",
-    "title": "Detailed Context",
-    "description": {},
-    "author": [],
-    "date": "2020-07-23",
-    "categories": [],
-    "preview": {},
-    "last_modified": "2020-07-23T21:44:43+02:00",
-    "input_file": {}
-  },
-  {
-    "path": "posts/Introduction/",
+    "path": "posts/01_Introduction/",
     "title": "PARKCAST: Parks in the Pandemic",
     "description": {},
     "author": [],
@@ -22,14 +11,25 @@
     "input_file": {}
   },
   {
-    "path": "posts/SMART/",
+    "path": "posts/02_Details/",
+    "title": "Detailed Context",
+    "description": {},
+    "author": [],
+    "date": "2020-07-23",
+    "categories": [],
+    "preview": {},
+    "last_modified": "2020-07-23T21:55:49+02:00",
+    "input_file": {}
+  },
+  {
+    "path": "posts/03_SMART/",
     "title": "Are we SMART?",
     "description": {},
     "author": [],
     "date": "2020-07-23",
     "categories": [],
     "preview": {},
-    "last_modified": "2020-07-23T21:46:51+02:00",
-    "input_file": "SMART.utf8.md"
+    "last_modified": "2020-07-23T21:46:52+02:00",
+    "input_file": {}
   }
 ]

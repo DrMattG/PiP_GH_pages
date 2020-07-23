@@ -23,5 +23,5 @@ With the onset of COVID-19 in the UK, the importance of recreational park use wa
 
 In response to this, we have developed an app drawing on entirely open data which predicts levels of park use at the upper-tier local authority level in England. Specifically, we combine weather data from the Met Office COVID-19 response, access to greenspace data from Ordnance Survey and the Office for National Statistics, historical greenspace visits data from Natural England’s Monitor of Engagement with the Natural Environment survey [@NaturalEngland2019Monitor], to predict with around 80% accuracy the continually-updated parks mobility data released by Google in response to the pandemic. Uniquely, we use weather forecasts alongside historical weather and social science data to predict how busy parks in a certain local authorities may be in the coming days, supporting app users to make decisions about visiting them. Broadly, this interdisciplinary investigation falls under NERC’s medical and health interface, and aligns with their increasingly interdisciplinary and collaborative remit as it incorporates both social science and atmospheric science data sources, and is a partnership between three academic institutions as well as Natural England, an executive non-departmental public body.
 
-# References
+
 
