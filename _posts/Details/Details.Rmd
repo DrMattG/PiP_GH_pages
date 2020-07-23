@@ -1,0 +1,27 @@
+---
+title: "Detailed Context"
+description: |
+bibliography: ref-extracts.bib 
+link-citations: yes
+csl: nature-no-et-al.csl
+self_contained: false
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+Natural environments are increasingly seen as public health resources [@Hartig2014Nature]. Provision of ‘green’ spaces in the living environment in particular has been associated with positive health outcomes including reduced mortality [@Rojas-Rueda2019Green], morbidity [@Maas2009Morbidity], improved general health [@Klompmaker2019Residential], and mental health [@Gascon2015Mental]. Despite this, provision of urban green infrastructure is often seen as insufficient for improving health and reducing health inequality, with suggestions that supporting recreational contact is necessary [@Hunter2019Environmental]. Indeed, visiting green spaces for recreation has been associated with reduced stress [@White2013Feelings], increased energy expenditure [@Elliott2015Energy], improved psychological wellbeing [@White2017Natural] and reduced mortality [@Sulander2016Urban].
+
+The recreational use of greenspace is now recognised by the UK government as a key public health indicator [@DepartmentofHealth2016Improving], and recognition of the importance of the connection between green spaces and health is central to DEFRA’s 25-year plan [@DepartmentforEnvironmentFoodRuralAffairs2018Green]. Internationally, green spaces are recognised by the World Health Organisations as settings which have the potential for equitable health improvement across a wide spectrum of populations [@WorldHealthOrganization2016Urban; @WorldHealthOrganization2017Urban]. The economic value of green spaces to human health at a national level have been assessed in a number of ways [@Day2016Outdoor; @White2016Recreational], and business applications of this are beginning to be realised through large-scale grants to develop decision support tools for urban planners, for instance [@Greenkeeper]. 
+
+With the onset of COVID-19 in the UK, the importance of recreational park use was brought into sharp focus as one of very few recreational opportunities that was permissible during the initial lockdown period [@DepartmentforEnvironmentFoodRuralAffairs2020Coronavirus]. Internationally, anecdotal research has pointed to increased recreational use of greenspace during lockdown periods [@AhmadpoorRealising; @Rice2020Understanding; @Venter2020Urban]. On the one hand, this potentially presents opportunities for maintaining good health in otherwise isolated times [@Slater2020Recommendations]. On the other hand, a lack of alternative recreational opportunities could mean that parks become busier hotspots for recreation and therefore present risks to the transmission of COVID-19[@You2020Distribution]. This could be especially true given clement climatic conditions [@Elliott2019effects; @MacKerron2013Happiness; @Rice2020Understanding; @Wolff2011Relationships]. It is plausible that any increases in park visits may be sustained even in the face of relaxed restrictions as they are viewed as safer spaces; efforts to monitor this possibility nationally throughout the course of the pandemic are ongoing [@NaturalEngland2020Overview].
+
+In response to this, we have developed an app drawing on entirely open data which predicts levels of park use at the upper-tier local authority level in England. Specifically, we combine weather data from the Met Office COVID-19 response, access to greenspace data from Ordnance Survey and the Office for National Statistics, historical greenspace visits data from Natural England’s Monitor of Engagement with the Natural Environment survey [@NaturalEngland2019Monitor], to predict with around 80% accuracy the continually-updated parks mobility data released by Google in response to the pandemic. Uniquely, we use weather forecasts alongside historical weather and social science data to predict how busy parks in a certain local authorities may be in the coming days, supporting app users to make decisions about visiting them. Broadly, this interdisciplinary investigation falls under NERC’s medical and health interface, and aligns with their increasingly interdisciplinary and collaborative remit as it incorporates both social science and atmospheric science data sources, and is a partnership between three academic institutions as well as Natural England, an executive non-departmental public body.
+
+# References
+

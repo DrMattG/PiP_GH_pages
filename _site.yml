@@ -1,11 +1,11 @@
 name: "ParksInThePandemic_github.io"
-title: "Parks in the Pandemic"
+title: "PARKCAST: Parks in the Pandemic"
 description: |
-  Parks in the Pandemic
+  Forcasting park use in the pandemic
 output_dir: "docs"
 navbar:
   right:
-    - text: "Home"
+    - text: "posts"
       href: index.html
     - text: "About"
       href: about.html
