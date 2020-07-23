@@ -1,0 +1,66 @@
+---
+title: "Meet the team"
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Data curation
+
+## Matt Jones 
+![](matt.jpg)
+
+## Scarlett Kynoch
+![](Scarlett.png)
+
+Matt & Scarlett are based at the University of Exeter 
+
+# Advisory
+
+## Lewis Elliot
+
+![](Lewis.png)
+
+Lewis is based at the University of Exeter
+
+# Mapping
+
+## Jack Hatfield
+
+![](Jack.png)
+
+Jack is based at the University of York
+
+# RShiny Development
+
+## Anna Bush
+
+![](Anna.png)
+
+Anna is based at the University of Exeter
+
+## Matthew Grainger
+
+![](MattG.png)
+
+Matt is based at the Norwegian Institute for Nature Research
+
+# Natural England 
+
+## Beth Brockett
+
+![](Beth.png)
+
+## Katherine Burgess
+
+![](Katherine.png)
+
+## Rose O'Neil
+
+![](Rose.png)
+
+Beth, Katherine and Rose are all based at Natural England
