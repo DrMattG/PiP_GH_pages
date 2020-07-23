@@ -22,8 +22,9 @@ Use OpenWeather forecast data to forecast how busy parks will be in the future (
 
 ## SMART criteria
 
-Our solution meets the SMART criteria in the following ways: 
-### S’ (specific) = Does the solution you deliver match with the specific challenge of the Hackathon? Is it clear enough from your entry for the judges to assess you have completed a solution?
+Our solution meets the SMART criteria in the following ways:
+
+### 'S’ (specific) = Does the solution you deliver match with the specific challenge of the Hackathon? Is it clear enough from your entry for the judges to assess you have completed a solution?
 
 Our solution allows users to plan park visits and understand when they are about to move into a district (e.g. a weekend trip to another county) or time period (e.g. a weekend where parks are likely to be very busy) where this a high risk of COVID-19 transmission due to the busyness of parks. 
 The defaults of are app are set to display this information for Bedford. The default screen shows:
