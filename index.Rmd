@@ -1,22 +1,92 @@
 ---
 title: "Parks in the Pandemic"
 description: |
-  Welcome to the website. I hope you enjoy it!
 site: distill::distill_website
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 
-# Learn more about creating websites with Distill at:
-# https://rstudio.github.io/distill/website.html
-
-# Learn more about publishing to GitHub Pages at:
-# https://rstudio.github.io/distill/publish_website.html#github-pages
-
 ```
 
-```{r, echo=FALSE}
-stringi::stri_rand_lipsum(nparagraphs = 10)
-```
 
+
+![Hex logo for the parks in the pandemic project](C:/Users/matthew.grainger/Documents/Projects_in_development/ParksInThePandemic_github.io/Hex_Logo_4th_mockup-01.png "Hex sticker for the parks in the pandemic R package")
+
+With the onset of COVID-19 in the UK, the importance of recreational park use was brought into sharp focus as one of very few recreational opportunities that was permissible during the initial lockdown period. On the one hand, this potentially presents opportunities for maintaining good health in otherwise isolated times. On the other, a lack of alternative recreational opportunities could mean that parks become busier hotspots for recreation and therefore present risks to the transmission of COVID-19. 
+
+We have created an interactive app that allows the public to manage the risks and benefits of using parks. The app allows users to visualise how busy parks (including local parks, national parks, public beaches, marinas, dog parks, plazas, and public gardens) in their area will be over the next few days. The app visualises openly-available, aggregated and anonymised mobile device data from Google (https://www.google.com/covid19/mobility/) that tracks (with user’s consent) how many people are in parks each day in districts of England. Our key innovation is to:
+Combine the Google park busyness data with Met Office weather data and UK Government data relating to park usage and access to green spaces
+Build a statistical model to understand how weather, park usage and access to greenspace is related to park busyness (as defined by Google)
+Use OpenWeather forecast data to forecast how busy parks will be in the future (next few days), based on the weather data, in an interactive app.
+
+SMART criteria
+Our solution meets the SMART criteria in the following ways: 
+S’ (specific) = Does the solution you deliver match with the specific challenge of the Hackathon? Is it clear enough from your entry for the judges to assess you have completed a solution?
+Our solution allows users to plan park visits and understand when they are about to move into a district (e.g. a weekend trip to another county) or time period (e.g. a weekend where parks are likely to be very busy) where this a high risk of COVID-19 transmission due to the busyness of parks. 
+The defaults of are app are set to display this information for Bedford. The default screen shows:
+The historical park busyness trends for Bedford alongside the forecasted busyness (grey bar for less bust than winter, green for more busy than winter) based on OpenWeather forecasts and on weather, park usage and access to green space data (white bar)
+Bedford highlighted within a chloropleth map of park busyness across England (darker shades of green for more busy than winter, white for neutral, grey for less busy than winter).
+These graphics allow Bedfordians to visualise the busyness of parks has changed over time in their Bedford and how busy it is likely to be in the next few days, as well as place the busyness of Bedford parks within the wider context of the busyness of parks in other regions of England. Users can select other regions and days of the week to explore other regions’ data further.
+‘M’ (measurable) = Does the digital solution you put forward permit a ‘measurable outcome’? Does your entry meet expectations?
+Our measurable outcome is an app that allows the public to understand park busyness trends over the pandemic and forecast how parks in their area are likely to be in the future. Behind the forecasting element is complex modelling based on multiple sources the bringing together of big data, environmental and social science data, but we are able to reduce this complexity to a simple metric that is intuitive to users - a forecast of park busyness.
+‘A’ (achievable) = Is the digital solution put forward sensible and practical? Was the solution achieved within the time frame, opportunity and resources?
+We believe our solution is a sensible yet innovative use of environmental data for aiding the management of the COVID-19 pandemic. The increased popularity of parks during the COVID-19 pandemic makes them a potential hotspot for COVID-19 transmission, and the public have to manage this health risk with the risk of not visiting parks on their physical and mental health. We know that park usage is related to the weather and social factors, and so we thought it natural to combine these data to develop an experimental forecast of park busyness to help users manage this risk during the pandemic.
+We have assembled a new team with diverse expertise and brought together several sources of open data to achieve this. We have grabbed the opportunity of the availability of new datasets in the pandemic as well as incorporating more established datasets (e.g. Natural England, Office for National Statistics data). We are proud of the experimental app we have created in just 4 weeks!
+‘R’ (relevant) = Does the digital solution put forward have scientific merit (in NERC remit), with relevance to the overall Hackathon theme? Does the digital solution have the desired impact?
+Our solution covers the NERC remit well. It uses using atmospheric/earth observation  data to understand the physical processes acting upon life - in this case, humans! Additionally, we are truly interdisciplinary in that we use social science-type data from Natural England and the Office for National Statistics relating to greenspace usage and access. It addresses key societal challenges; most obviously, helping individuals and organisations to plan and manage the risk of COVID-19 transmission in parks. Less obviously though, the increased use of parks during the pandemic presents other environmental challenges such as ‘flash’ littering, footpath erosion and other environmental damage - all of which need to be managed and preferably, predicted in advance. Our experimental forecast using environmental and social science data seeks to fill these niches, allowing society (e.g. Bedfordians planning weekend trips to Cornwall), the government (e.g. Public Health England, Natural England, the Environment Agency), businesses (e.g.outdoor recreation and retail businesses).
+More generally, the combined dataset we have pieced together from multiple different datasets presents a new opportunity for pure, applied and/or policy driven work. In line with the Challenge, we have emphasised the latter two types of work - but there are also ample opportunities for pure environmental science here. Essentially, we have created an exciting new dataset could act as the basis for understanding the movement ecology of humans based on environmental and social factors and/or be used to understand how humans’ use of greenspaces is likely to impact the ecology of plants and animals.
+‘T’ (timebound) = Has the topic been adequately addressed satisfactorily within the allocated weeks?
+We believe that given the time constraints, we have made significant progress towards the goal of forecasting park busyness based on environmental and social science data. In 4 weeks:
+ All the datasets we aimed to bring together and more have been brought together - including Google data, Met Office data, Natural England, Office for National Statistics and Openweather forecast data
+We have visualised the Google data and our predictions of it in the more intuitive formats of a bar graph and a map. These are fully interactive so that users can view a particular time period in the pandemic and the bar graph and map will change, facilitating the understanding of historical changes.
+We have produced an experimental forecast of future park busyness based on weather and social science data, and displayed this alongside the historical Google data..The forecasting model parameters will be refined in the future to improve predictions, but the platform to visualise these forecasts is already there!
+
+
+
+
+
+
+
+
+
+Detailed Context
+Natural environments are increasingly seen as public health resources (Hartig et al., 2014). Provision of ‘green’ spaces in the living environment in particular has been associated with positive health outcomes including reduced mortality (Rojas-Rueda et al., 2019), morbidity (Maas et al., 2009), improved general health (Klompmaker et al., 2019), and mental health (Gascon et al., 2015). Despite this, provision of urban green infrastructure is often seen as insufficient for improving health and reducing health inequality, with suggestions that supporting recreational contact is necessary (Hunter et al., 2019). Indeed, visiting green spaces for recreation has been associated with reduced stress (White et al., 2013), increased energy expenditure (Elliott et al., 2015), improved psychological wellbeing (White et al., 2017) and reduced mortality (Sulander et al., 2016).
+
+The recreational use of greenspace is now recognised by the UK government as a key public health indicator (Department of Health, 2016), and recognition of the importance of the connection between green spaces and health is central to DEFRA’s 25-year plan (Department for Environment, Food & Rural Affairs, 2018). Internationally, green spaces are recognised by the World Health Organisations as settings which have the potential for equitable health improvement across a wide spectrum of populations (World Health Organization, 2016, 2017). The economic value of green spaces to human health at a national level have been assessed in a number of ways (Day & Smith, 2016; White et al., 2016), and business applications of this are beginning to be realised through large-scale grants to develop decision support tools for urban planners, for instance (Greenkeeper, n.d.). 
+
+With the onset of COVID-19 in the UK, the importance of recreational park use was brought into sharp focus as one of very few recreational opportunities that was permissible during the initial lockdown period (Department for Environment, Food & Rural Affairs, 2020). Internationally, anecdotal research has pointed to increased recreational use of greenspace during lockdown periods (Ahmadpoor & Shahab, In Press; Rice & Pan, 2020; Venter et al., 2020). On the one hand, this potentially presents opportunities for maintaining good health in otherwise isolated times (Slater et al., 2020). On the other hand, a lack of alternative recreational opportunities could mean that parks become busier hotspots for recreation and therefore present risks to the transmission of COVID-19 (You et al., 2020). This could be especially true given clement climatic conditions (Elliott et al., 2019; MacKerron & Mourato, 2013; Rice & Pan, 2020; Wolff & Fitzhugh, 2011). It is plausible that any increases in park visits may be sustained even in the face of relaxed restrictions as they are viewed as safer spaces; efforts to monitor this possibility nationally throughout the course of the pandemic are ongoing (Natural England, 2020).
+
+In response to this, we have developed an app drawing on entirely open data which predicts levels of park use at the upper-tier local authority level in England. Specifically, we combine weather data from the Met Office COVID-19 response, access to greenspace data from Ordnance Survey and the Office for National Statistics, historical greenspace visits data from Natural England’s Monitor of Engagement with the Natural Environment survey (Natural England, 2019), to predict with around 80% accuracy the continually-updated parks mobility data released by Google in response to the pandemic. Uniquely, we use weather forecasts alongside historical weather and social science data to predict how busy parks in a certain local authorities may be in the coming days, supporting app users to make decisions about visiting them. Broadly, this interdisciplinary investigation falls under NERC’s medical and health interface, and aligns with their increasingly interdisciplinary and collaborative remit as it incorporates both social science and atmospheric science data sources, and is a partnership between three academic institutions as well as Natural England, an executive non-departmental public body.
+
+
+References
+
+Ahmadpoor, N., & Shahab, S. (In Press). Realising the value of greenspace: A planners’ perspective on the COVID-19 pandemic. Town Planning Review.
+Day, B., & Smith, G. (2016). Outdoor Recreation Valuation ORVal User Guide (p. 27). Department for Environment, Food and Rural Affairs. http://leep.exeter.ac.uk/orval
+Department for Environment, Food & Rural Affairs. (2018). A Green Future: Our 25 Year Plan to Improve the Environment. Crown Copyright.
+Department for Environment, Food & Rural Affairs. (2020). Coronavirus (COVID-19): Advice on accessing green spaces safely. GOV.UK. https://www.gov.uk/guidance/coronavirus-covid-19-advice-on-accessing-green-spaces-safely
+Department of Health. (2016). Improving outcomes and supporting transparency part 2: Summary technical specifications of public health indicators (p. 147). https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/545605/PHOF_Part_2.pdf
+Elliott, L. R., White, M. P., Sarran, C., Grellier, J., Garrett, J. K., Scoccimarro, E., Smalley, A. J., & Fleming, L. E. (2019). The effects of meteorological conditions and daylight on nature-based recreational physical activity in England. Urban Forestry & Urban Greening, 42, 39–50. https://doi.org/10.1016/j.ufug.2019.05.005
+Elliott, L. R., White, M. P., Taylor, A. H., & Herbert, S. (2015). Energy expenditure on recreational visits to different natural environments. Social Science & Medicine, 139, 53–60. https://doi.org/10.1016/j.socscimed.2015.06.038
+Gascon, M., Triguero-Mas, M., Martínez, D., Dadvand, P., Forns, J., Plasència, A., & Nieuwenhuijsen, M. (2015). Mental Health Benefits of Long-Term Exposure to Residential Green and Blue Spaces: A Systematic Review. International Journal of Environmental Research and Public Health, 12(4), 4354–4379. https://doi.org/10.3390/ijerph120404354
+Greenkeeper. (n.d.). GREENKEEPER. Retrieved 22 July 2020, from http://www.greenkeeperuk.co.uk/
+Hartig, T., Mitchell, R., de Vries, S., & Frumkin, H. (2014). Nature and Health. Annual Review of Public Health, 35(1), 207–228. https://doi.org/10.1146/annurev-publhealth-032013-182443
+Hunter, R. F., Cleland, C., Cleary, A., Droomers, M., Wheeler, B. W., Sinnett, D., Nieuwenhuijsen, M. J., & Braubach, M. (2019). Environmental, health, wellbeing, social and equity effects of urban green space interventions: A meta-narrative evidence synthesis. Environment International, 130, 104923. https://doi.org/10.1016/j.envint.2019.104923
+Klompmaker, J. O., Janssen, N. A. H., Bloemsma, L. D., Gehring, U., Wijga, A. H., van den Brink, C., Lebret, E., Brunekreef, B., & Hoek, G. (2019). Residential surrounding green, air pollution, traffic noise and self-perceived general health. Environmental Research, 108751. https://doi.org/10.1016/j.envres.2019.108751
+Maas, J., Verheij, R. A., Vries, S. de, Spreeuwenberg, P., Schellevis, F. G., & Groenewegen, P. P. (2009). Morbidity is related to a green living environment. Journal of Epidemiology & Community Health, 63(12), 967–973. https://doi.org/10.1136/jech.2008.079038
+MacKerron, G., & Mourato, S. (2013). Happiness is greater in natural environments. Global Environmental Change, 23(5), 992–1000. https://doi.org/10.1016/j.gloenvcha.2013.03.010
+Natural England. (2019). Monitor of Engagement with the Natural Environment. The national survey on people and the natural environment. Technical Report to the 2009—2019 surveys. https://www.gov.uk/government/statistics/monitor-of-engagement-with-the-natural-environment-headline-report-and-technical-reports-2018-to-2019
+Natural England. (2020). Overview of the People and Nature Survey. GOV.UK. https://www.gov.uk/government/collections/people-and-nature-survey-for-england
+Rice, W. L., & Pan, B. (2020). Understanding drivers of change in park visitation during the COVID-19 pandemic: A spatial application of Big data. https://doi.org/10.31235/osf.io/97qa4
+Rojas-Rueda, D., Nieuwenhuijsen, M. J., Gascon, M., Perez-Leon, D., & Mudu, P. (2019). Green spaces and mortality: A systematic review and meta-analysis of cohort studies. The Lancet Planetary Health, 3(11), e469–e477. https://doi.org/10.1016/S2542-5196(19)30215-3
+Slater, S. J., Christiana, R. W., & Gustat, J. (2020). Recommendations for Keeping Parks and Green Space Accessible for Mental and Physical Health During COVID-19 and Other Pandemics. Preventing Chronic Disease: Public Health Research, Practice, and Policy, 17.
+Sulander, T., Karvinen, E., & Holopainen, M. (2016). Urban Green Space Visits and Mortality Among Older Adults: Epidemiology, 27(5), e34–e35. https://doi.org/10.1097/EDE.0000000000000511
+Venter, Z., Barton, D., Figari, H., & Nowell, M. (2020). Urban nature in a time of crisis: Recreational use of green space increases during the COVID-19 outbreak in Oslo, Norway. https://doi.org/10.31235/osf.io/kbdum
+White, M. P., Elliott, L. R., Taylor, T., Wheeler, B. W., Spencer, A., Bone, A., Depledge, M. H., & Fleming, L. E. (2016). Recreational physical activity in natural environments and implications for health: A population based cross-sectional study in England. Preventive Medicine, 91, 383–388. https://doi.org/10.1016/j.ypmed.2016.08.023
+White, M. P., Pahl, S., Ashbullby, K., Herbert, S., & Depledge, M. H. (2013). Feelings of restoration from recent nature visits. Journal of Environmental Psychology, 35, 40–51. https://doi.org/10.1016/j.jenvp.2013.04.002
+White, M. P., Pahl, S., Wheeler, B. W., Depledge, M. H., & Fleming, L. E. (2017). Natural environments and subjective wellbeing: Different types of exposure are associated with different aspects of wellbeing. Health & Place, 45, 77–84. https://doi.org/10.1016/j.healthplace.2017.03.008
+Wolff, D., & Fitzhugh, E. C. (2011). The Relationships between Weather-Related Factors and Daily Outdoor Physical Activity Counts on an Urban Greenway. International Journal of Environmental Research and Public Health, 8(12), 579–589. https://doi.org/10.3390/ijerph8020579
+World Health Organization. (2016). Urban green spaces and health: A review of evidence. http://www.euro.who.int/__data/assets/pdf_file/0005/321971/Urban-green-spaces-and-health-review-evidence.pdf?ua=1
+World Health Organization. (2017). Urban green space interventions and health: A review of impacts and effectiveness. World Health Organization Regional Office for Europe. http://www.euro.who.int/en/health-topics/environment-and-health/urban-health/publications/2017/urban-green-space-interventions-and-health-a-review-of-impacts-and-effectiveness.-full-report-2017
+You, H., Wu, X., & Guo, X. (2020). Distribution of COVID-19 Morbidity Rate in Association with Social and Economic Factors in Wuhan, China: Implications for Urban Development. International Journal of Environmental Research and Public Health, 17(10), 3417.
