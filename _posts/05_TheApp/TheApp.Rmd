@@ -10,8 +10,8 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## You can find the app at https://mattlloydjones.shinyapps.io/parksinthepandemic_cb/
+## You can find the app at https://mattlloydjones.shinyapps.io/parksinthepandemic/
 
 ## Or get the code from https://github.com/befriendabacterium/parksinthepandemic
 
-<iframe width="700" height="400" scrolling="no" frameborder="no"  src="https://mattlloydjones.shinyapps.io/parksinthepandemic_cb/"> </iframe> 
+<iframe width="700" height="400" scrolling="no" frameborder="no"  src="https://mattlloydjones.shinyapps.io/parksinthepandemic/"> </iframe> 
