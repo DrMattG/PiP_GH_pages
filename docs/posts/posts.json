@@ -18,7 +18,7 @@
     "date": "2020-07-24",
     "categories": [],
     "preview": {},
-    "last_modified": "2020-07-24T14:31:11+02:00",
+    "last_modified": "2020-07-24T14:41:25+02:00",
     "input_file": {}
   },
   {
@@ -41,6 +41,17 @@
     "categories": [],
     "preview": {},
     "last_modified": "2020-07-24T14:31:15+02:00",
+    "input_file": {}
+  },
+  {
+    "path": "posts/05_TheApp/",
+    "title": "The App",
+    "description": {},
+    "author": [],
+    "date": "2020-07-24",
+    "categories": [],
+    "preview": {},
+    "last_modified": "2020-07-24T14:48:40+02:00",
     "input_file": {}
   }
 ]

@@ -1,0 +1,17 @@
+---
+title: "The App"
+self_contained: false
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## You can find the app at https://mattlloydjones.shinyapps.io/parksinthepandemic_cb/
+
+## Or get the code from https://github.com/befriendabacterium/parksinthepandemic
+
+<iframe width="700" height="400" scrolling="no" frameborder="no"  src="https://mattlloydjones.shinyapps.io/parksinthepandemic_cb/"> </iframe> 
