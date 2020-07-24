@@ -24,8 +24,8 @@
   
   
   <!--  https://schema.org/Article -->
-  <meta property="article:published" itemprop="datePublished" content="2020-07-23"/>
-  <meta property="article:created" itemprop="dateCreated" content="2020-07-23"/>
+  <meta property="article:published" itemprop="datePublished" content="2020-07-24"/>
+  <meta property="article:created" itemprop="dateCreated" content="2020-07-24"/>
   
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
   <meta property="og:title" content="PARKCAST: Parks in the Pandemic"/>
@@ -40,12 +40,12 @@
   <!--radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","output","date"]}},"value":[{"type":"character","attributes":{},"value":["PARKCAST: Parks in the Pandemic"]},{"type":"NULL"},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]},{"type":"character","attributes":{},"value":["07-23-2020"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","output","date"]}},"value":[{"type":"character","attributes":{},"value":["PARKCAST: Parks in the Pandemic"]},{"type":"NULL"},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]},{"type":"character","attributes":{},"value":["07-24-2020"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["Hex_Logo_4th_mockup-01.png"]}
+  {"type":"character","attributes":{},"value":["Hex_Logo_4th_mockup-01.png","introduction_files/bowser-1.9.3/bowser.min.js","introduction_files/distill-2.2.21/template.v2.js","introduction_files/jquery-1.11.3/jquery.min.js","introduction_files/webcomponents-2.0.0/webcomponents.js"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
   <!--/radix_placeholder_navigation_in_header-->
@@ -948,7 +948,7 @@
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"PARKCAST: Parks in the Pandemic","authors":[],"publishedDate":"2020-07-23T00:00:00.000+02:00"}
+{"title":"PARKCAST: Parks in the Pandemic","authors":[],"publishedDate":"2020-07-24T00:00:00.000+02:00"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -965,10 +965,15 @@
 
 <div class="d-article">
 <figure>
-<img src="Hex_Logo_4th_mockup-01.png" alt="Hex logo for the parks in the pandemic project" /><figcaption>Hex logo for the parks in the pandemic project</figcaption>
+<img src="Hex_Logo_4th_mockup-01.png" alt="Hex logo for the parks in the pandemic project by Thomas Gwynfor Sanford" /><figcaption>Hex logo for the parks in the pandemic project by Thomas Gwynfor Sanford</figcaption>
 </figure>
 <p>With the onset of COVID-19 in the UK, the importance of recreational park use was brought into sharp focus as one of very few recreational opportunities that was permissible during the initial lockdown period. On the one hand, this potentially presents opportunities for maintaining good health in otherwise isolated times. On the other, a lack of alternative recreational opportunities could mean that parks become busier hotspots for recreation and therefore present risks to the transmission of COVID-19.</p>
-<p>We have created an interactive app that allows the public to manage the risks and benefits of using parks. The app allows users to visualise how busy parks (including local parks, national parks, public beaches, marinas, dog parks, plazas, and public gardens) in their area will be over the next few days. The app visualises openly-available, aggregated and anonymised mobile device data from Google (<a href="https://www.google.com/covid19/mobility/" class="uri">https://www.google.com/covid19/mobility/</a>) that tracks (with user’s consent) how many people are in parks each day in districts of England. Our key innovation is to: Combine the Google park busyness data with Met Office weather data and UK Government data relating to park usage and access to green spaces Build a statistical model to understand how weather, park usage and access to greenspace is related to park busyness (as defined by Google) Use OpenWeather forecast data to forecast how busy parks will be in the future (next few days), based on the weather data, in an interactive app.</p>
+<p>We have created an interactive app that allows the public to visualise the risks and benefits of using parks over time and space. The app allows users to visualise and experimentally forecast how busy parks (including local parks, national parks, public beaches, marinas, dog parks, plazas, and public gardens) in their area will be over the next few days. The app visualises openly-available, aggregated and anonymised mobile device data from Google (<a href="https://www.google.com/covid19/mobility/" class="uri">https://www.google.com/covid19/mobility/</a>) that tracks (with user’s consent) how many people are in parks each day in districts of England. Our key innovation is to:</p>
+<ol type="1">
+<li><p>Combine the Google park busyness data with Met Office weather data and UK Government data relating to park usage and access to green spaces</p></li>
+<li><p>Build a random forest regression model to understand how weather, park usage and access to greenspace is related to park busyness (as defined by Google)</p></li>
+<li><p>Use OpenWeather forecast data to forecast how busy parks will be in the future (next few days) - based on the weather and social science data, in an interactive app.</p></li>
+</ol>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>

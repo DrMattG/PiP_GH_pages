@@ -1,5 +1,5 @@
 ---
-title: "Detailed Context"
+title: "Rationale"
 description: |
 bibliography: ref-extracts.bib 
 link-citations: yes

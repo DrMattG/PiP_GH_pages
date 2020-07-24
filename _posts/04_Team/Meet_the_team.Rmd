@@ -27,14 +27,6 @@ Matt & Scarlett are based at the University of Exeter
 
 Lewis is based at the University of Exeter
 
-# Mapping
-
-## Jack Hatfield
-
-![](Jack.png)
-
-Jack is based at the University of York
-
 # RShiny Development
 
 ## Anna Bush
